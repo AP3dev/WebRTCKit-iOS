@@ -4,7 +4,12 @@ Swift Package contenant la lib WebRTC et un wrapper Objective-C
 
 ### Installation
 
-Via SPM depuis Xcode
+en tant que dépendance
+```
+.package(url: "git@github.com:AP3dev/WebRTCKit-iOS.git", .exact("1.0.1"))
+```
+ou via SPM depuis xcode 
+
 
 
 ### Usage
