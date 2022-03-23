@@ -6,7 +6,7 @@ Swift Package contenant la lib WebRTC et un wrapper Objective-C
 
 en tant que dépendance
 ```
-.package(url: "git@github.com:AP3dev/WebRTCKit-iOS.git", .exact("1.0.1"))
+.package(url: "git@github.com:AP3dev/WebRTCKit-iOS.git", .exact("1.0.2"))
 ```
 ou via SPM depuis xcode 
 
