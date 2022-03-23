@@ -21,7 +21,6 @@ let package = Package(
         .target(
                name: "cWebRTC",
                path: "Sources/WebRTC",
-               publicHeadersPath: "Sources/WebRTC/include",
                cSettings: [
                  .headerSearchPath("Sources/WebRTC/include"),
                ]),
