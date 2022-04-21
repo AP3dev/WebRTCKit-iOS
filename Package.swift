@@ -10,14 +10,7 @@ let package = Package(
             name: "WebRTCWrapper",
             targets: ["cWebRTC", "WebRTCWrapper"]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
     targets: [
-//        .target(
-//            name: "MyLibrary",
-//            dependencies: ["WebRTCWrapper"]),
         .target(
                name: "cWebRTC",
                path: "Sources/WebRTC",
@@ -28,8 +21,5 @@ let package = Package(
                 name: "WebRTCWrapper",
                 dependencies: ["cWebRTC"],
                 path: "Sources/WebRTCWrapper"),
-//        .testTarget(
-//            name: "MyLibraryTests",
-//            dependencies: ["MyLibrary"]),
     ]
 )
