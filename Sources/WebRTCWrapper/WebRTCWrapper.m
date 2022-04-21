@@ -8,12 +8,22 @@
 
 @implementation WebRTCWrapper
 
--(id)init {
+-(id) init {
     self = [super init];
     if (self) {
         WebRtcVad_Create(&vad_C);
         WebRtcVad_Init(vad_C);
         WebRtcVad_set_mode(vad_C, 0);
+    }
+    return self;
+}
+
+-(id) initWithMode:(int) mode {
+    self = [super init];
+    if (self) {
+        WebRtcVad_Create(&vad_C);
+        WebRtcVad_Init(vad_C);
+        WebRtcVad_set_mode(vad_C, mode);
     }
     return self;
 }

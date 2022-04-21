@@ -8,6 +8,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WebRTCWrapper : NSObject
 
+-(id) initWithMode:(int) mode;
 -(BOOL) isVoiceAudio:(const int16_t*) audioFrame withSize:(int) size andSampleRate:(int) sampleRate;
 
 @end
